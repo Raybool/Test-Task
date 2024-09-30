@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link href="./styles.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Observer.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="./search.script.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img class="logo" src="./assets/img/logo.svg" alt="Логотип" />
+
+            <div class="search__box">
+                <div class="search__box__input">
+                    <img class="search__logo" src="./assets/img/search_logo.svg" />
+
+                    <input class="search__input" placeholder="Поиск" />
+                </div>
+
+                <ul class="search__results" style="display: none;"></ul>
+
+            </div>
+
+            <button class="bell__button"></button>
+
+        </header>
+
+        <main>
+            <div class="slider__box" role="region">
+                <h3>Ситуации наших последних клиентов</h3>
+
+                <div class="slider__card" role="list">
+                    <div class="card" role="listitem">
+                        <img src="./assets/img/card_1.svg" />
+                    </div>
+
+                    <div class="card" role="listitem">
+                        <img src="./assets/img/card_2.svg" />
+                    </div>
+
+                    <div class="card" role="listitem">
+                        <img src="./assets/img/card_1.svg" />
+                    </div>
+
+                    <div class="card" role="listitem">
+                        <img src="./assets/img/card_2.svg" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="consultation__box">
+                <div class="consultation__box__textImage">
+                    <img src="./assets/img/consultation_image.svg" />
+
+                    <div class="consultation__box__text">
+                        <h2>Мы всегда на связи <br />
+                            и готовы помочь вам</h2>
+
+                        <p class="subtitle">Готовы проконсультировать вас</p>
+                    </div>
+                    <button type="button" class="blue__button">Мне нужна консультация</button>
+                </div>
+            </div>
+
+            <div class="services__box">
+                <h2>Наши услуги</h2>
+
+                <div class="services__card__box">
+                    <div class="row__services__card__box">
+                        <div class="services__card">
+                            <a href="#">
+                                <img class="services__card_icon" src="./assets/img/situation.svg" />
+
+                                <h3>Ситуации</h3>
+
+                                <p class="subtitle">в судебной практике</p>
+                            </a>
+                        </div>
+
+                        <div class="services__card">
+                            <a href="#">
+                                <img class="services__card_icon" src="./assets/img/questions_answers.svg" />
+
+                                <h3>Вопрос ответ</h3>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row__services__card__box">
+                        <div class="services__card">
+                            <a href="#">
+                                <img class="services__card_icon" src="./assets/img/docs.svg" />
+
+                                <h3>Документы</h3>
+                            </a>
+                        </div>
+
+                        <div class="services__card">
+                            <a href="#">
+                                <img class="services__card_icon" src="./assets/img/guides.svg" />
+
+                                <h3>Справочник</h3>
+
+                                <p class="subtitle">нужной информации</p>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="news__box">
+                <div class="news__header">
+                    <h2>Новости</h2>
+
+                    <button class="news__seeMore_button">
+                        Читать все
+                    </button>
+                </div>
+
+                <div class="news__card">
+                    <img class="news__card__img" src="./assets/img/news_card_1.png" />
+
+                    <div class="news__card__text">
+                        <h2>Кредитные организации</h2>
+
+                        <p class="news__card_text subtitle">Банкам нельзя с 1 июля требовать от компаний, ИП и физлиц
+                            повышенные
+                            комиссии...</p>
+
+                        <p class="subtitle_2">25 апреля</p>
+
+                    </div>
+                </div>
+
+                <div class="news__card">
+                    <img class="news__card__img" src="./assets/img/news_card_2.png" />
+
+                    <div class="news__card__text">
+                        <h2>Кредитные организации</h2>
+
+                        <p class="news__card_text subtitle">Банкам нельзя с 1 июля требовать от компаний, ИП и физлиц
+                            повышенные
+                            комиссии...</p>
+
+                        <p class="subtitle_2">25 апреля</p>
+                    </div>
+                </div>
+
+                <div class="news__card">
+                    <div class="news__card__text">
+                        <h2>Кредитные организации</h2>
+
+                        <p class="news__card_text subtitle">Банкам нельзя с 1 июля требовать от компаний, ИП и физлиц
+                            повышенные
+                            комиссии...</p>
+
+                        <p class="subtitle_2">25 апреля</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer>
+            <ul class="menu">
+                <li><a href="#"><img width="24" height="24" src="./assets/img/home.svg" /> Главная</a></li>
+                <li><a href="#"><img width="24" height="24" src="./assets/img/book.svg" /> Сервисы</a></li>
+                <li><a href="#"><img width="24" height="24" src="./assets/img/text_message.svg" /> Обращения</a></li>
+                <li><a href="#"><img width="24" height="24" src="./assets/img/call.svg" /> Звонок</a></li>
+                <li><a href="#"><img width="24" height="24" src="./assets/img/shield.svg" /> Профиль</a></li>
+            </ul>
+        </footer>
+    </div>
+
+</body>
+
+</html>
